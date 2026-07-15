@@ -414,3 +414,229 @@ Ashish
 Chief Technology Architect
 
 ChatGPT
+
+---
+
+# Coding Standards
+
+Every source file follows strict standards.
+
+Rules
+
+- Strict Mode
+- ES Modules Ready
+- Zero Global Pollution
+- Single Responsibility Principle
+- DRY
+- KISS
+- SOLID
+- Fail Safe
+- Defensive Programming
+- Immutable Configuration
+- Modular Components
+
+---
+
+# Naming Convention
+
+Folders
+
+lowercase
+
+Example
+
+core
+
+modules
+
+assets
+
+admin
+
+plugins
+
+Files
+
+kebab-case
+
+Example
+
+font-engine.js
+
+symbol-engine.js
+
+seo-manager.js
+
+Classes
+
+PascalCase
+
+Functions
+
+camelCase
+
+Constants
+
+UPPER_SNAKE_CASE
+
+Private Members
+
+Prefix "_"
+
+---
+
+# Error Handling
+
+Every operation must
+
+Validate Input
+
+Catch Errors
+
+Log Errors
+
+Fail Gracefully
+
+Never crash the application.
+
+---
+
+# Browser Support
+
+Chrome
+
+Edge
+
+Firefox
+
+Safari
+
+Android Browser
+
+Chromium Browsers
+
+Progressive Enhancement is mandatory.
+
+---
+
+# Offline Support
+
+Application works offline.
+
+Critical assets remain cached.
+
+Offline page is always available.
+
+Static resources use cache-first strategy.
+
+Dynamic resources use network-first strategy.
+
+---
+
+# PWA Goals
+
+Installable
+
+Offline
+
+Fast
+
+Responsive
+
+Secure
+
+No unnecessary permissions
+
+---
+
+# Admin Philosophy
+
+Users never access administration features.
+
+Administration remains isolated.
+
+Future admin modules integrate without modifying existing files.
+
+Administrative actions must always require authentication.
+
+---
+
+# Plugin Philosophy
+
+Every future tool behaves as an independent plugin.
+
+Plugin isolation prevents one module from breaking another.
+
+Plugin loading is automatic.
+
+Plugin removal never affects the core.
+
+---
+
+# AI Philosophy
+
+AI is an optional enhancement.
+
+Core platform never depends on AI.
+
+If AI is unavailable, the application continues working normally.
+
+Future AI providers can be added without changing the core architecture.
+
+---
+
+# Automation Philosophy
+
+Maximum automation.
+
+Minimum manual work.
+
+Whenever an external platform supports automation, it should be used.
+
+Where automation is impossible, provide clear manual instructions.
+
+---
+
+# Privacy
+
+No unnecessary user data.
+
+No tracking.
+
+No fingerprinting.
+
+No selling data.
+
+No hidden analytics.
+
+User data always belongs to the user.
+
+---
+
+# Backup Strategy
+
+Repository is the primary backup.
+
+Git history is the secondary backup.
+
+Critical configuration remains exportable.
+
+Future admin backups remain downloadable.
+
+---
+
+# Documentation
+
+Every important module must contain clear documentation.
+
+Architecture documentation remains synchronized with implementation.
+
+No undocumented critical systems.
+
+---
+
+# Long-Term Goal
+
+Create the most advanced Unicode utilities platform that remains fast, secure, scalable, mobile-friendly, SEO-focused, and maintainable for years without requiring architectural rewrites.
+
+End of README.
