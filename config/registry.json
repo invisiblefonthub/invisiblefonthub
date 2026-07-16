@@ -1,0 +1,351 @@
+{
+  "$schema": "https://invisiblefonthub.dev/schema/registry.schema.json",
+
+  "registry": {
+    "version": "enterprise",
+    "locked": true,
+    "immutable": true
+  },
+
+  "modules": {
+
+    "core": {
+      "enabled": true,
+      "autoload": true
+    },
+
+    "fonts": {
+      "enabled": true,
+      "autoload": true
+    },
+
+    "symbols": {
+      "enabled": true,
+      "autoload": true
+    },
+
+    "nicknames": {
+      "enabled": true,
+      "autoload": true
+    },
+
+    "emoji": {
+      "enabled": true,
+      "autoload": true
+    },
+
+    "kaomoji": {
+      "enabled": true,
+      "autoload": true
+    },
+
+    "ascii": {
+      "enabled": true,
+      "autoload": true
+    },
+
+    "zalgo": {
+      "enabled": true,
+      "autoload": true
+    },
+
+    "seo": {
+      "enabled": true,
+      "autoload": true
+    },
+
+    "admin": {
+      "enabled": true,
+      "autoload": true
+    },
+
+    "plugins": {
+      "enabled": true,
+      "autoload": true
+    },
+
+    "automation": {
+      "enabled": true,
+      "autoload": true
+    },
+
+    "ai": {
+      "enabled": true,
+      "autoload": true
+    }
+
+  },
+    "services": {
+
+    "storage": {
+      "enabled": true,
+      "autoload": true
+    },
+
+    "cache": {
+      "enabled": true,
+      "autoload": true
+    },
+
+    "clipboard": {
+      "enabled": true,
+      "autoload": true
+    },
+
+    "share": {
+      "enabled": true,
+      "autoload": true
+    },
+
+    "history": {
+      "enabled": true,
+      "autoload": true
+    },
+
+    "favorites": {
+      "enabled": true,
+      "autoload": true
+    },
+
+    "search": {
+      "enabled": true,
+      "autoload": true
+    },
+
+    "theme": {
+      "enabled": true,
+      "autoload": true
+    },
+
+    "router": {
+      "enabled": true,
+      "autoload": true
+    },
+
+    "export": {
+      "enabled": true,
+      "autoload": true
+    },
+
+    "import": {
+      "enabled": true,
+      "autoload": true
+    },
+
+    "logger": {
+      "enabled": true,
+      "autoload": true
+    },
+
+    "security": {
+      "enabled": true,
+      "autoload": true
+    },
+
+    "performance": {
+      "enabled": true,
+      "autoload": true
+    }
+
+  },
+
+  "registries": {
+
+    "modules": true,
+    "plugins": true,
+    "services": true,
+    "events": true,
+    "routes": true,
+    "permissions": true,
+    "capabilities": true,
+    "features": true,
+    "commands": true,
+    "hooks": true,
+    "pipelines": true,
+    "workers": true
+
+  },
+
+  "pluginDirectories": [
+
+    "plugins",
+
+    "plugins/fonts",
+
+    "plugins/symbols",
+
+    "plugins/nicknames",
+
+    "plugins/tools",
+
+    "plugins/seo",
+
+    "plugins/admin",
+
+    "plugins/automation",
+
+    "plugins/ai"
+
+  ],
+    "capabilities": {
+
+    "dynamicModuleLoading": true,
+    "dynamicPluginLoading": true,
+    "dynamicToolRegistration": true,
+    "dependencyResolution": true,
+    "eventDispatching": true,
+    "serviceDiscovery": true,
+    "permissionManagement": true,
+    "featureFlags": true,
+    "runtimeConfiguration": true,
+    "themeSwitching": true,
+    "languageSwitching": true,
+    "offlineSupport": true,
+    "pwaSupport": true,
+    "seoGeneration": true,
+    "schemaGeneration": true,
+    "rssGeneration": true,
+    "sitemapGeneration": true,
+    "robotsGeneration": true,
+    "cacheManagement": true,
+    "backupManagement": true,
+    "restoreManagement": true,
+    "adminManagement": true,
+    "securityMonitoring": true,
+    "performanceMonitoring": true
+
+  },
+
+  "dependencies": {
+
+    "core": [],
+
+    "fonts": [
+      "core"
+    ],
+
+    "symbols": [
+      "core"
+    ],
+
+    "nicknames": [
+      "core"
+    ],
+
+    "emoji": [
+      "core"
+    ],
+
+    "kaomoji": [
+      "core"
+    ],
+
+    "ascii": [
+      "core"
+    ],
+
+    "zalgo": [
+      "core"
+    ],
+
+    "seo": [
+      "core",
+      "router"
+    ],
+
+    "admin": [
+      "core",
+      "security",
+      "storage"
+    ],
+
+    "plugins": [
+      "core"
+    ],
+
+    "automation": [
+      "core",
+      "plugins"
+    ],
+
+    "ai": [
+      "core",
+      "plugins"
+    ]
+
+  },
+
+  "bootSequence": [
+
+    "core",
+
+    "storage",
+
+    "cache",
+
+    "security",
+
+    "router",
+
+    "theme",
+
+    "search",
+
+    "plugins",
+
+    "automation",
+
+    "ai",
+
+    "admin"
+
+  ],
+    "toolRegistry": {
+    "autoRegister": true,
+    "autoDiscover": true,
+    "allowExternalTools": true,
+    "allowInternalTools": true,
+    "manifestRequired": true,
+    "duplicateProtection": true
+  },
+
+  "aiRegistry": {
+    "enabled": true,
+    "allowMultipleProviders": true,
+    "fallbackSupported": true,
+    "localPromptLibrary": true,
+    "futureProviders": true
+  },
+
+  "searchEngineRegistry": {
+    "google": true,
+    "bing": true,
+    "yandex": true,
+    "indexNow": true
+  },
+
+  "socialRegistry": {
+    "pinterest": true,
+    "reddit": true,
+    "quora": true,
+    "medium": true,
+    "linkedin": true,
+    "facebook": true,
+    "x": true,
+    "tumblr": true
+  },
+
+  "deploymentRegistry": {
+    "github": true,
+    "blogger": true,
+    "productionOnly": true
+  },
+
+  "reserved": {
+    "futureExpansion": true,
+    "reservedKeys": [],
+    "reservedModules": [],
+    "reservedServices": [],
+    "reservedPlugins": []
+  }
+}
