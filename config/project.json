@@ -1,0 +1,267 @@
+{
+  "$schema": "https://invisiblefonthub.dev/schema/project.schema.json",
+
+  "project": {
+    "id": "IFH-ENTERPRISE",
+    "name": "Invisible Font Hub",
+    "codename": "Enterprise",
+    "owner": "Ashish",
+    "architect": "ChatGPT",
+    "platform": "Blogger",
+    "repository": "GitHub",
+    "license": "Proprietary",
+    "language": "en",
+    "status": "production",
+    "mobileFirst": true,
+    "offlineFirst": true,
+    "pluginFirst": true,
+    "securityFirst": true,
+    "performanceFirst": true,
+    "seoFirst": true,
+    "accessibilityFirst": true,
+    "futureProof": true
+  },
+
+  "runtime": {
+    "strictMode": true,
+    "moduleIsolation": true,
+    "eventDriven": true,
+    "lazyLoading": true,
+    "parallelInitialization": true,
+    "serviceWorker": true,
+    "cacheEnabled": true,
+    "safeExecution": true,
+    "immutableConfiguration": true,
+    "debug": false
+  },
+
+  "features": {
+    "fonts": true,
+    "nicknames": true,
+    "symbols": true,
+    "emoji": true,
+    "kaomoji": true,
+    "asciiArt": true,
+    "zalgo": true,
+    "invisibleCharacters": true,
+    "favorites": true,
+    "history": true,
+    "clipboard": true,
+    "share": true,
+    "export": true,
+    "offline": true,
+    "pwa": true,
+    "search": true,
+    "darkMode": true,
+    "lightMode": true,
+    "multiLanguage": true
+  },
+
+  "security": {
+    "sanitizeInput": true,
+    "sanitizeOutput": true,
+    "escapeHtml": true,
+    "contentSecurityPolicy": true,
+    "xssProtection": true,
+    "clickjackingProtection": true,
+    "safeClipboard": true,
+    "safeStorage": true,
+    "safeRendering": true
+  },
+
+  "seo": {
+    "enabled": true,
+    "metaTags": true,
+    "canonical": true,
+    "robots": true,
+    "sitemap": true,
+    "openGraph": true,
+    "twitterCards": true,
+    "jsonLd": true,
+    "breadcrumb": true,
+    "faqSchema": true,
+    "internalLinks": true
+  },
+
+  "performance": {
+    "minify": true,
+    "compression": true,
+    "prefetch": true,
+    "preload": true,
+    "lazyImages": true,
+    "lazyModules": true,
+    "cacheStrategy": "cache-first",
+    "networkFallback": true
+  },
+    "storage": {
+    "engine": "localStorage",
+    "historyLimit": 100,
+    "favoritesLimit": 5000,
+    "settingsKey": "ifh_settings",
+    "historyKey": "ifh_history",
+    "favoritesKey": "ifh_favorites",
+    "backupEnabled": true,
+    "exportEnabled": true,
+    "importEnabled": true
+  },
+
+  "github": {
+    "enabled": true,
+    "repositorySource": "official",
+    "branch": "main",
+    "cdn": "jsdelivr",
+    "releaseMode": "production"
+  },
+
+  "blogger": {
+    "enabled": true,
+    "templateMode": true,
+    "dynamicPages": true,
+    "custom404": true,
+    "feedEnabled": true,
+    "commentSystem": false,
+    "searchEnabled": true
+  },
+
+  "pwa": {
+    "enabled": true,
+    "installPrompt": true,
+    "offlineSupport": true,
+    "backgroundSync": false,
+    "pushNotifications": false
+  },
+
+  "plugins": {
+    "enabled": true,
+    "autoDiscovery": true,
+    "hotRegistration": true,
+    "hotRemoval": true,
+    "pluginDirectory": "plugins",
+    "manifest": "plugins/plugins.json"
+  },
+
+  "admin": {
+    "enabled": true,
+    "hidden": true,
+    "authentication": true,
+    "pluginInstaller": true,
+    "toolInstaller": true,
+    "seoManager": true,
+    "backupManager": true,
+    "deploymentManager": true,
+    "automationCenter": true,
+    "developerConsole": true
+  },
+
+  "ai": {
+    "enabled": true,
+    "provider": "custom",
+    "fallbackMode": true,
+    "toolGenerator": true,
+    "contentGenerator": true,
+    "seoAssistant": true,
+    "promptTemplates": true
+  },
+
+  "automation": {
+    "enabled": true,
+    "sitemapGeneration": true,
+    "robotsGeneration": true,
+    "schemaGeneration": true,
+    "rssGeneration": true,
+    "internalLinking": true,
+    "metadataGeneration": true,
+    "slugGeneration": true
+  },
+
+  "analytics": {
+    "enabled": false,
+    "privacyMode": true,
+    "tracking": false,
+    "fingerprinting": false,
+    "thirdPartyScripts": false
+  },
+    "webmasters": {
+    "googleSearchConsole": {
+      "enabled": true,
+      "manualVerification": true
+    },
+    "bingWebmaster": {
+      "enabled": true,
+      "manualVerification": true
+    },
+    "yandexWebmaster": {
+      "enabled": true,
+      "manualVerification": true
+    },
+    "indexNow": {
+      "enabled": true,
+      "autoSubmit": true
+    }
+  },
+
+  "socialPublishing": {
+    "enabled": true,
+    "manualPlatforms": [
+      "Pinterest",
+      "Reddit",
+      "Quora",
+      "Medium",
+      "LinkedIn",
+      "Facebook",
+      "X",
+      "Tumblr"
+    ],
+    "futureAutomation": true
+  },
+
+  "search": {
+    "instantSearch": true,
+    "fuzzySearch": true,
+    "categorySearch": true,
+    "keywordSearch": true,
+    "unicodeSearch": true
+  },
+
+  "cache": {
+    "enabled": true,
+    "strategy": "cache-first",
+    "offlineFallback": true,
+    "dynamicCaching": true,
+    "staticCaching": true,
+    "cleanup": true
+  },
+
+  "futureModules": {
+    "enabled": true,
+    "toolMarketplace": true,
+    "pluginMarketplace": true,
+    "themeMarketplace": true,
+    "languagePacks": true,
+    "aiModules": true,
+    "seoModules": true,
+    "analyticsModules": true,
+    "developerModules": true
+  },
+
+  "quality": {
+    "productionOnly": true,
+    "allowPlaceholder": false,
+    "allowDemoCode": false,
+    "allowSkeleton": false,
+    "allowDuplicateCode": false,
+    "enterpriseOnly": true
+  },
+
+  "projectRules": {
+    "mobileDevelopment": true,
+    "githubOnly": true,
+    "bloggerOnly": true,
+    "freeServicesOnly": true,
+    "singleSourceOfTruth": true,
+    "neverRewriteArchitecture": true,
+    "neverCreateEmptyFiles": true,
+    "neverCreateEmptyFolders": true,
+    "everyFilePermanent": true
+  }
+}
